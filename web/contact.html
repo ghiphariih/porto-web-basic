@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me | Jham Portofolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #hero-contact {
+      background-image: url('gambar/bg2.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 70vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    #hero-contact::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    #hero-contact .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    #hero-contact h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    #hero-contact p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .contact-section {
+      background-color: white;
+      color: black;
+      padding: 80px 10%;
+      border-radius: 30px 30px 0 0;
+      margin-top: 100px;
+    }
+
+    .contact-section h3 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 30px;
+    }
+
+    .contact-box {
+      flex: 1 1 250px;
+    }
+
+    .contact-box h4 {
+      color: #ff4b4b;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    form {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 60%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    button {
+      padding: 12px 30px;
+      background-color: #ff4b4b;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #d83a3a;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">J.Ghiphaar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallerry.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero-contact">
+    <div class="container">
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h3>Let’s Work Together</h3>
+
+    <div class="contact-info">
+      <div class="contact-box">
+        <h4>Email</h4>
+        <p>mrgathok12@gmail.com</p>
+      </div>
+      <div class="contact-box">
+        <h4>Instagram</h4>
+        <a href="https://www.instagram.com/jham_ghiphaar/" target="_blank">@jham_ghiphaar</a>
+      </div>
+      <div class="contact-box">
+        <h4>WhatsApp</h4>
+        <a href="https://wa.me/6285174230648" target="_blank">+62 851-7423-0648</a>
+      </div>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Jham Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
